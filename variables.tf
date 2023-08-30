@@ -46,3 +46,12 @@ variable "accounts" {
     }))
     default = []
 }
+
+variable "aft_partion" {
+    type    = string
+    default = "aws"
+}
+
+variable "aft_management_account_id" {
+    type = string
+}
