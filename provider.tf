@@ -1,7 +1,7 @@
 provider "aws" {
   region = var.aft_home_region
   assume_role {
-    role_arn    = "arn:${var.aft_partion}:iam::${var.aft_management_account_id}:role/AWSAFTAdmin"
+    role_arn    = "arn:${var.aft_partion}:iam::${var.aft_management_account_id}:role/AWSAFTExecution"
   }
   default_tags {
     tags = {
